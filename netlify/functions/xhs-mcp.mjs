@@ -1663,7 +1663,7 @@ const TOOLS = [
     {
         name: "xhs_check_login",
         description: "检查小红书登录态是否有效，返回当前登录账号昵称。调其它工具报错时先用它确认 cookie 过期没有。",
-        inputSchema: { type: "object", properties: {}, required: [] },
+        inputSchema: { type: "object", properties: { _dummy: { type: "string" } }, required: [] },
         command: "check-login",
         build: () => ({}),
     },
